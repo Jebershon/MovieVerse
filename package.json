@@ -10,9 +10,11 @@
     "bootstrap": "^5.3.3",
     "bootstrap-icons": "^1.11.3",
     "react": "^18.3.1",
+    "react-autosuggest": "^10.1.0",
     "react-bootstrap": "^2.10.3",
     "react-dom": "^18.3.1",
     "react-multi-carousel": "^2.8.5",
+    "react-router-dom": "^6.24.0",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
