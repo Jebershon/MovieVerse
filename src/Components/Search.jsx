@@ -3,12 +3,12 @@ import Autosuggest from 'react-autosuggest';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import { Form } from 'react-bootstrap';
-import './search.css'; // Import the CSS file
+import './search.css'; 
 
 const SearchShows = () => {
   const [value, setValue] = useState('');
   const [suggestions, setSuggestions] = useState([]);
-  const Navigate = useNavigate();
+  const history = useNavigate();
 
   const fetchSuggestions = async (query) => {
     if (query.length >= 3) {
@@ -18,7 +18,7 @@ const SearchShows = () => {
           {
             headers: {
               accept: 'application/json',
-              Authorization: 'Bearer your_api_token_here'
+              Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3ZjM5NGQyY2FhNGRhMGM4Njk0ZTQ1Y2NjMzY3YjljNCIsIm5iZiI6MTcxOTYzNDM3My41NDU5NTQsInN1YiI6IjY2N2Y4ODIzZGI0ZGFjZTk2NmFmZWIyMyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.NphK0VtfEGRoWXU2EH6yMRUZF1UKKFcD90o3NiPJah0'
             }
           }
         );
@@ -46,7 +46,7 @@ const SearchShows = () => {
   const getSuggestionValue = (suggestion) => suggestion.title;
 
   const handleSuggestionClick = (suggestion) => {
-    Navigate(`/movie/${suggestion.id}`);
+    history(`/movie/${suggestion.id}`);
   };
 
   const renderSuggestion = (suggestion, { isHighlighted }) => (

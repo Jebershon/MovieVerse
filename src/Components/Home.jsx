@@ -155,7 +155,6 @@ function Home() {
             <Button className="btn-warning sign">Sign in</Button>
           </div>
       </div>
-      <hr/>
       <Coursel/>
       <hr/>
       <h3 class="ipc-title__text">My Watchlist</h3>

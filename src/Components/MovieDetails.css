@@ -1,0 +1,40 @@
+/* MovieDetails.css */
+.movie-details-card {
+    position: relative;
+    color: white;
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 15px;
+    padding: 2rem;
+    margin: 2rem;
+    backdrop-filter: blur(6px) saturate(180%);
+    -webkit-backdrop-filter: blur(6px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.6);
+  }
+  
+  .movie-details-card .card-body {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+    border-radius: 15px;
+  }
+  
+  .movie-details-card .movie-rating {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .movie-details-card .movie-info {
+    margin-top: 1rem;
+  }
+  
+  .movie-details-card .movie-info div {
+    margin: 0.5rem 0;
+  }
+  
+  .movie-details-card .movie-age-rating {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: red;
+  }
+  
